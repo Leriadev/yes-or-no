@@ -1,0 +1,114 @@
+@import "./Scss/_colors.scss";
+
+.App {
+  .App__header  {
+    height: 6vh;
+    header {
+      background-color: $primary;
+      padding: 20px;
+    }
+
+    address {
+      font-size: 16px;
+      color: $secondary;
+      text-align: right;
+      margin-right: 5em;
+      font-weight: 300;
+    }
+  }
+
+  .App__main {
+    padding: 85px 0 40px 0;
+    height: 60vh;
+    text-align: center;
+    background-color: $secondary;
+    color: $primary;
+    .question {
+      input:-webkit-autofill,
+      input:-webkit-autofill:focus {
+        transition: background-color 600000s 0s, color 600000s 0s; //перезатирание стиля при выделенной форме
+      }
+      input {
+        display: block;
+        margin: 5px auto;
+        width: 25%;
+        height: calc(2.25rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-family: inherit;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #212529;
+        background-color: $primary;
+        background-clip: padding-box;
+        border: 1px solid #bdbdbd;
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+      input:focus {
+        color: #212529;
+        background-color: $primary;
+        border-color: #bdbdbd;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+      }
+      input:focus::placeholder {
+        opacity: 0;
+      }
+    }
+    .answer{
+      .get-answer{
+        margin-bottom: 80px;
+        img{
+          max-height: 200px;
+        }
+        label{
+          font-size: 30px;
+        }
+      }
+      .retry{
+        p{
+          color:rgba(158, 158, 158, 0.50)
+        }
+        &__btn{
+          transition: 2s;
+          -webkit-transition: 2s ease; /* Safari and Chrome */
+          -moz-transition: 2s ease; /* Firefox 4 */
+          -o-transition: 2s ease; /* Opera */
+          border:none;
+          margin: 2px 0;
+          height: calc(2.25rem + 2px);
+          padding: 0.375rem 0.75rem;
+          font-family: inherit;
+          font-size: 14px;
+          color: #212529;
+          background-color: rgba(158, 158, 158, 0.30);
+          border-radius: 0.25rem;
+        }
+        &__btn:hover{
+          transition: 1s linear;
+          border: 1px solid #bdbdbd;
+          background-color: $primary;
+        }
+      }
+    }
+  }
+
+  .App__footer {
+    footer {
+      text-align: right;
+      padding: 10px;
+      color: $secondary;
+      background-color: $primary;
+      ul{
+        margin: 0 90px;
+        h2{
+          margin: 10px 0 10px 0;
+        }
+        li{
+          list-style: none;
+          padding: 3px;
+        }
+      }
+    }
+  }
+}
