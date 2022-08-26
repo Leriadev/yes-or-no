@@ -1,6 +1,7 @@
 Yes or No?
 
 react, react-redux, react-router-dom, redux-thunk, formik, yup, sass
+
 API: https://yesno.wtf/#api
 
 ![image](https://user-images.githubusercontent.com/94675218/183290916-03653b9d-610e-44dc-b984-60f3ca56a2ca.png)
